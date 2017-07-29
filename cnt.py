@@ -29,6 +29,11 @@ while num<n:
         print(ll)
         r.extend(rr)
         l.extend(ll)
+    elif num==(n-1):
+        rr=[(totalat-2),1,4,(totalat-1)]
+        ll=[(totalat-6),(totalat-3),totalat,(totalat-5)]
+        r.extend(rr)
+        l.extend(ll)
     else:
         zo=4*(num)+1
         rr=[(zo+1),(zo+4),(zo+7),(zo+2)]
@@ -51,7 +56,7 @@ while num<n:
 for num in range(1,totalat+1):
     if num in range(1,totalat,4):
         mm.append(' ')
-    elif num in range(4,totalat,4):
+    elif num in range(4,totalat+1,4):
         mm.append(' ')
     else:
         if num%2==0:
@@ -69,5 +74,4 @@ for num in range(totalat):
     else:
         M=mm[num]
     myfile.write('{}\t {}\t {}\t {}\t {}\t {}\t {}\t {}\t\n'.format(nu,'C',Xco[num],Yco[num],Zco[num],R,L,M))
-    print(R,L,M)
 myfile.close()
