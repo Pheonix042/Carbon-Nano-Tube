@@ -75,3 +75,4 @@ for num in range(totalat):
         M=mm[num]
     myfile.write('{}\t {}\t {}\t {}\t {}\t {}\t {}\t {}\t\n'.format(nu,'C',Xco[num],Yco[num],Zco[num],R,L,M))
 myfile.close()
+print('Exit')
